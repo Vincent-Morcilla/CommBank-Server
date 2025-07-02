@@ -11,6 +11,9 @@ public class Goal
 
     public string? Name { get; set; }
 
+    [BsonElement("icon")]
+    public string? Icon { get; set; }
+
     public UInt64 TargetAmount { get; set; } = 0;
 
     public DateTime TargetDate { get; set; }
